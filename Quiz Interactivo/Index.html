@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Hábitos Saludables</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>¡Aprende sobre Hábitos Saludables!</h1>
+
+        <div class="progress">Pregunta 1 de 3</div>
+
+        <!-- Pregunta 1 -->
+        <div class="question-container active" id="question1">
+            <div class="question">¿Cuál de estas opciones es la más saludable para el desayuno?</div>
+            <div class="options">
+                <div class="option" data-correct="false">Donuts y chocolate caliente</div>
+                <div class="option" data-correct="true">Fruta, yogur y pan integral</div>
+                <div class="option" data-correct="false">Cereales azucarados con leche</div>
+                <div class="option" data-correct="false">Tostadas con mantequilla y mermelada</div>
+            </div>
+            <div class="navigation">
+                <button id="next1" disabled>Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question-container" id="question2">
+            <div class="question">¿Cuánto tiempo de ejercicio se recomienda para los niños cada día?</div>
+            <div class="options">
+                <div class="option" data-correct="false">15 minutos</div>
+                <div class="option" data-correct="false">30 minutos</div>
+                <div class="option" data-correct="true">60 minutos o más</div>
+                <div class="option" data-correct="false">No es necesario hacer ejercicio diario</div>
+            </div>
+            <div class="navigation">
+                <button id="prev2">Anterior</button>
+                <button id="next2" disabled>Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question-container" id="question3">
+            <div class="question">¿Cuántas horas de sueño necesitan los niños de 6 a 12 años cada noche?</div>
+            <div class="options">
+                <div class="option" data-correct="false">6-7 horas</div>
+                <div class="option" data-correct="false">8 horas</div>
+                <div class="option" data-correct="true">9-12 horas</div>
+                <div class="option" data-correct="false">Pueden dormir lo que quieran</div>
+            </div>
+            <div class="navigation">
+                <button id="prev3">Anterior</button>
+                <button id="finish" disabled>Finalizar</button>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="result-container" id="result">
+            <div class="score">Tu puntaje: <span id="total-score">0</span>/15</div>
+            <div class="message" id="message"></div>
+            <div class="feedback" id="feedback"></div>
+            <button id="restart">Volver a empezar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
